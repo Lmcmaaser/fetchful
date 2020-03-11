@@ -17,11 +17,11 @@ class App extends Component {
   state = initialState;
 
   performFetch = () =>
-    fetch('http://localhost:8000/pokemon?name=pik&type=Electric', {
-      headers: {
-        Authorization: 'Bearer MY-API-TOKEN',
-      },
-    });
+  fetch(`http://localhost:${8000}/${'/movies'}`, {
+    headers: {
+      Authorization: `Bearer ${cc870e40-6322-11ea-bc55-0242ac130003}`,
+    },
+  });
 
   handleClickFetch = (e) => {
     this.performFetch()
