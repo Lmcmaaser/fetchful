@@ -17,9 +17,9 @@ class App extends Component {
   state = initialState;
 
   performFetch = () =>
-  fetch(`http://localhost9000/movies?genre=Drama`, {
+  fetch(`http://localhost:9000/movies?genre=Drama`, {
     headers: {
-      Authorization: `Bearer MY-API-TOKEN`,
+      Authorization: `Bearer insert`,
     },
   });
 
